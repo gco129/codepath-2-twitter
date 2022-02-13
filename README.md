@@ -33,13 +33,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/9l78zdT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-I ended up exceeding the rate limit while attempting to record, so I had to wait before recording again. It was also difficult to showcase the refresh feature as a new tweet would have to appear as I was recording.
+Hex color codes from Twitter were used for the text and toolbar. I ended up exceeding the rate limit while attempting to record, so I had to wait before recording again. It was also difficult to showcase the refresh feature as a new tweet would have to appear as I was recording.
 
 ## Open-source libraries used
 
