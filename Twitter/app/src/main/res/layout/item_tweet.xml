@@ -20,15 +20,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@id/ivProfileImage"
+        android:textColor="#1B1C1E"
         tools:text="Jon User Name" />
 
     <TextView
         android:id="@+id/tvScreenName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        android:layout_below="@id/tvName"
+        android:textColor="#74797F"
         tools:text="/@user_screenName" />
 
     <TextView
@@ -37,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="5dp"
+        android:textColor="#8C8F94"
         tools:text="25 mins ago" />
 
     <TextView
@@ -49,6 +52,7 @@
         android:layout_toEndOf="@+id/ivProfileImage"
         android:autoLink="all"
         android:linksClickable="true"
+        android:textColor="#1C1D1F"
         tools:text="The body. This is a tweet." />
 
     <View
