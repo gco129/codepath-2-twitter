@@ -23,6 +23,12 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 		final SampleModel sampleModel = new SampleModel();
 		sampleModel.setName("CodePath");
 
+		// Set logo
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_twitter_icon_top);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setDisplayShowTitleEnabled(false);
+
 		sampleModelDao = ((TwitterApplication) getApplicationContext()).getMyDatabase().sampleModelDao();
 
 		AsyncTask.execute(new Runnable() {
