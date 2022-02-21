@@ -106,7 +106,7 @@ public class TimelineActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate menu, adding items to the action bbar if present
+        // Inflate menu, adding items to the action bar if present
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -170,11 +170,12 @@ public class TimelineActivity extends AppCompatActivity {
                 Log.i(TAG, "Populate onSuccess: " + json.toString());
                 JSONArray jsonArray = json.jsonArray;
                 try {
-                    List<Tweet> tweetsFromNetwork = Tweet.fromJsonArray(jsonArray);
+                    final List<Tweet> tweetsFromNetwork = Tweet.fromJsonArray(jsonArray);
                     adapter.clear();
                     adapter.addAll(tweetsFromNetwork);
                     // Refresh has finished
                     swipeContainer.setRefreshing(false);
+                    // Save current tweets into database for offline use
                     AsyncTask.execute(new Runnable() {
                         @Override
                         public void run() {
